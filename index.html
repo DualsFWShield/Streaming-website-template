@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Barre de navigation -->
+    <header>
+        <h1>Streaming Gratuit</h1>
+        <nav>
+            <input type="text" id="search" placeholder="Rechercher un film ou une série">
+        </nav>
+    </header>
+
+    <!-- Section Films -->
+    <section class="category" id="films">
+        <h2>Films</h2>
+        <div class="gallery" id="film-gallery">
+            <!-- Les films seront générés ici -->
+        </div>
+    </section>
+
+    <!-- Section Séries -->
+    <section class="category" id="series">
+        <h2>Séries</h2>
+        <div class="gallery" id="serie-gallery">
+            <!-- Les séries seront générées ici -->
+        </div>
+    </section>
+
+    <!-- Lecteur vidéo -->
+    <div id="video-player-container" class="hidden">
+        <div class="video-overlay">
+            <div class="video-controls">
+                <button id="close-btn"><i class="fas fa-times"></i></button>
+                <video id="video-player" controls></video>
+                <div class="controls">
+                    <!-- Boutons play/pause, expand, pip, etc. -->
+                    <button id="play-pause-btn"><i class="fas fa-play"></i></button>
+                    <button id="expand-button"><i class="fas fa-expand"></i></button>
+                    <button id="pip-button"><i class="fa-solid fa-up-right-from-square"></i></button>
+                    <button id="speed-btn"><i class="fas fa-tachometer-alt"></i></button>
+                    <button id="back-btn"><i class="fas fa-undo"></i></button>
+                    <button id="forward-btn"><i class="fas fa-redo"></i></button>
+                    <button id="download-btn"><i class="fas fa-download"></i></button>
+                </div>
+            </div>
+
+            <!-- Interface séries : saisons et épisodes -->
+            <div id="serie-details" class="hidden">
+                <h3 id="serie-title"></h3>
+                <label for="season-select">Saison :</label>
+                <select id="season-select"></select>
+                
+                <h4>Épisodes</h4>
+                <ul id="episode-list">
+                    <!-- Les épisodes seront affichés ici -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
