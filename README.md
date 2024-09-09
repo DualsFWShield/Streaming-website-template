@@ -9,6 +9,7 @@ Ce projet est une application web permettant de visualiser une galerie de films 
 - **Sélecteur de saisons et d'épisodes** : Pour les séries, les utilisateurs peuvent choisir une saison et un épisode via un menu déroulant.
 - **Recherche** : Recherche en temps réel de films et de séries par titre.
 - **Contrôles vidéo** : Fonctionnalités de pause/lecture, avance/retour de 10 secondes, ajustement de la vitesse de lecture, et téléchargement de la vidéo.
+- **Data.js** : Contien toutes les donnees comme la description, age minimum, affiche et lien de la video.
 
 ## Technologies Utilisées
 
@@ -21,5 +22,5 @@ Ce projet est une application web permettant de visualiser une galerie de films 
 
 1. Clonez le dépôt GitHub :
    ```bash
-   git clone https://github.com/votre-utilisateur/galerie-films-series.git
+   git clone https://github.com/DualsFWShield/Streaming-website-template.git
    ```
